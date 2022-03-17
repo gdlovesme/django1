@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ПУБЛИКАЦИИ</title>
+
+</head>
+<body>
+      {% for item in post %}
+        <h2>{{ item.author }}</h2>
+        <h3>{{ item.title }}</h3>
+        <h4>{{ item.description }}</h4>
+    {% endfor %}
+</body>
+</html>
